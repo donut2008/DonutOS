@@ -9,7 +9,7 @@ namespace DonutOS
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("DonutOS version 1.8");
+            Console.WriteLine("DonutOS version 1.9");
         }
 
         protected override void Run()
@@ -20,8 +20,15 @@ namespace DonutOS
             {
                 case "about":
                     {
-                        Console.WriteLine("DonutOS version 1 developer beta build 8.");
+                        Console.WriteLine("DonutOS version 1 developer beta build 9.");
                         Console.WriteLine("Built by donut2008 using CosmosOS and written in C#.");
+                        break;
+                    }
+                case "help":
+                    {
+                        Console.WriteLine("Available commands are:");
+                        Console.WriteLine("help  - Shows this message");
+                        Console.WriteLine("about - Shows information about the OS");
                         break;
                     }
                 default:
