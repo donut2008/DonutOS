@@ -10,19 +10,18 @@ namespace DonutOS
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.WriteLine("DonutOS version 1 developer build 18");
+            Console.WriteLine("DonutOS version 1 developer build 19");
         }
         protected override void Run()
         {
-            Console.WriteLine("\n");
             Console.Write("> ");
             var input = Console.ReadLine();
             switch(input.ToLower())
             {
                 case "about":
                     {
-                        Console.WriteLine("DonutOS version 1 developer beta build 18");
-                        Console.WriteLine("Built by donut2008 using CosmosOS and written in C#.");
+                        Console.WriteLine("DonutOS version 1 developer beta build 19");
+                        Console.WriteLine("Built by donut2008 using CosmosOS and written in C#.\n");
                         break;
                     }
                 case "help":
@@ -31,30 +30,30 @@ namespace DonutOS
                         Console.WriteLine("help   - Shows this message");
                         Console.WriteLine("about  - Shows information about the OS");
                         Console.WriteLine("exit   - Shuts down the OS");
-                        Console.WriteLine("reboot - Restarts the OS");
+                        Console.WriteLine("reboot - Restarts the OS\n");
                         break;
                     }
                 case "exit":
                     {
-                        Console.WriteLine("Shutting down...");
+                        Console.WriteLine("Shutting down...\n");
                         Cosmos.System.Power.Shutdown();
                         break;
                     }
                 case "reboot":
                     {
-                        Console.WriteLine("Rebooting...");
+                        Console.WriteLine("Rebooting...\n");
                         Cosmos.System.Power.Reboot();
                         break;
                     }
                 case "clrsc":
                     {
-                        Console.WriteLine("Clearing screen...");
+                        Console.WriteLine("Clearing screen...\n");
                         Console.Clear();
                         break;
                     }
                 default:
                     {
-                        Console.Write("Invalid command. Type \"help\" to see available commands.");
+                        Console.WriteLine("Invalid command. Type \"help\" to see available commands.\n");
                         break;
                     }
             }
