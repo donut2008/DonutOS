@@ -9,23 +9,19 @@ namespace DonutOS
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("DonutOS version 1.11");
+            Console.WriteLine("DonutOS version 1.16");
         }
-
         protected override void Run()
         {
             Console.Clear();
-            Console.WriteLine("Enter a username for this session: ");
-            var user = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine("DonutOS version 1 developer build 11\n\nRunning as user "+user);
-            Console.WriteLine(user+"> ");
+            Console.WriteLine("DonutOS version 1 developer build 16\n\n");
+            Console.Write("> ");
             var input = Console.ReadLine();
             switch(input.ToLower())
             {
                 case "about":
                     {
-                        Console.WriteLine("DonutOS version 1 developer beta build 11");
+                        Console.WriteLine("DonutOS version 1 developer beta build 16");
                         Console.WriteLine("Built by donut2008 using CosmosOS and written in C#.");
                         break;
                     }
@@ -36,7 +32,6 @@ namespace DonutOS
                         Console.WriteLine("about  - Shows information about the OS");
                         Console.WriteLine("exit   - Shuts down the OS");
                         Console.WriteLine("reboot - Restarts the OS");
-                        Console.WriteLine("whoami - Shows current user");
                         break;
                     }
                 case "exit":
@@ -52,22 +47,12 @@ namespace DonutOS
                         Cosmos.System.Power.Reboot();
                         break;
                     }
-                case "whoami":
-                    {
-                        Console.WriteLine("DonutOS\\"+user);
-                        break;
-                    }
                 default:
                     {
-                        Console.Write("Text typed: ");
-                        Console.WriteLine(input);
+                        Console.Write("Invalid command. Type \"help\" to see available commands.");
                         break;
                     }
             }
-        }
-        private void CommandHandler(string input)
-        {
-
         }
     }
 }
