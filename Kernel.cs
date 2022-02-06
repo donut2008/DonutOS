@@ -9,12 +9,12 @@ namespace DonutOS
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("Cosmos booted successfully. Type a line of text to get it echoed back.");
+            Console.WriteLine("DonutOS version 1.0");
         }
 
         protected override void Run()
         {
-            Console.Write("Input: ");
+            Console.Write("Enter any text to print: ");
             var input = Console.ReadLine();
             Console.Write("Text typed: ");
             Console.WriteLine(input);
