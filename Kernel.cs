@@ -9,19 +9,19 @@ namespace DonutOS
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("DonutOS version 1.16");
+            Console.Clear();
+            Console.WriteLine("DonutOS version 1 developer build 18");
         }
         protected override void Run()
         {
-            Console.Clear();
-            Console.WriteLine("DonutOS version 1 developer build 16\n\n");
+            Console.WriteLine("\n");
             Console.Write("> ");
             var input = Console.ReadLine();
             switch(input.ToLower())
             {
                 case "about":
                     {
-                        Console.WriteLine("DonutOS version 1 developer beta build 16");
+                        Console.WriteLine("DonutOS version 1 developer beta build 18");
                         Console.WriteLine("Built by donut2008 using CosmosOS and written in C#.");
                         break;
                     }
@@ -36,7 +36,6 @@ namespace DonutOS
                     }
                 case "exit":
                     {
-                        Console.Clear();
                         Console.WriteLine("Shutting down...");
                         Cosmos.System.Power.Shutdown();
                         break;
@@ -45,6 +44,12 @@ namespace DonutOS
                     {
                         Console.WriteLine("Rebooting...");
                         Cosmos.System.Power.Reboot();
+                        break;
+                    }
+                case "clrsc":
+                    {
+                        Console.WriteLine("Clearing screen...");
+                        Console.Clear();
                         break;
                     }
                 default:
