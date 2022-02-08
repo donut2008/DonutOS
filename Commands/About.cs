@@ -6,10 +6,14 @@ namespace DonutOS.Commands
 {
     public class About : Command
     {
-        public About(string name) : base(name) { }
+        public About(String name) : base(name) { }
         public override string execute(string[] args)
         {
-            return "About this OS\n\nKernel : CosmosOS\nBuild  : 20\nVersion: 2";
+            return "About this OS\n\n" +
+                "DonutOS\n" +
+                "Version: 3\n" +
+                "Build  : 30\n" +
+                "Kernel : CosmosOS\n";
         }
     }
 }

@@ -12,7 +12,7 @@ namespace DonutOS
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.WriteLine("DonutOS version 2 developer build 20");
+            Console.WriteLine("DonutOS version 3 developer build 30");
             this.commandManager = new CommandManager();
         }
         protected override void Run()
@@ -20,7 +20,7 @@ namespace DonutOS
             Console.Write("> ");
             String response;
             String input = Console.ReadLine();
-            response = this.commandManager.processInput(input);
+            response = this.commandManager.processInput(input.ToLower());
             Console.WriteLine(response);
         }
     }
