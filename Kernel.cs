@@ -12,7 +12,7 @@ namespace DonutOS
         protected override void BeforeRun()
         {
             Console.Clear();
-            Console.WriteLine("DonutOS version 3 developer build 30");
+            Console.WriteLine("DonutOS version 3 developer beta build 33");
             this.commandManager = new CommandManager();
         }
         protected override void Run()

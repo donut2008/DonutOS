@@ -14,6 +14,7 @@ namespace DonutOS.Commands
             this.commands.Add(new About("about"));
             this.commands.Add(new ShutdownSystem("exit"));
             this.commands.Add(new RestartSystem("reboot"));
+            this.commands.Add(new ConsoleClear("cls"));
         }
         public String processInput(String input)
         {
