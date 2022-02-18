@@ -7,7 +7,7 @@ namespace DonutOS.Commands
     public class Help : Command
     {
         public Help(String name) : base(name) { }
-        public override string execute(String[] args)
+        public override String execute(String[] args)
         {
             return "Welcome to DonutOS! Available commands are:\n" +
                 "about  - Shows information about the OS\n" +

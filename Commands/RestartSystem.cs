@@ -7,7 +7,7 @@ namespace DonutOS.Commands
     public class RestartSystem : Command
     {
         public RestartSystem(String name) : base(name) { }
-        public override string execute(string[] args)
+        public override String execute(String[] args)
         {
             Console.Clear();
             Console.WriteLine("Restarting...");

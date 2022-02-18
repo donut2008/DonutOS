@@ -8,7 +8,7 @@ namespace DonutOS.Commands
     public class ShutdownSystem : Command
     {
         public ShutdownSystem(String name) : base(name) { }
-        public override string execute(string[] args)
+        public override String execute(String[] args)
         {
             Console.Clear();
             Console.WriteLine("Shutting down...");

@@ -12,7 +12,7 @@ namespace DonutOS.Commands
             return "About this OS\n\n" +
                 "DonutOS\n" +
                 "Version: 3\n" +
-                "Build  : 33\n" +
+                "Build  : 37\n" +
                 "Kernel : CosmosOS\n";
         }
     }
