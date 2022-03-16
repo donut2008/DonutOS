@@ -10,14 +10,13 @@ namespace DonutOS
     public class Kernel : Sys.Kernel
     {
         private CommandManager commandManager;
-        private CosmosVFS vfs;
+        Sys.FileSystem.CosmosVFS fs = new Sys.FileSystem.CosmosVFS();
         protected override void BeforeRun()
         {
-            this.vfs = new CosmosVFS();
-            Sys.FileSystem.VFS.VFSManager.RegisterVFS(this.vfs);
+            Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
             Console.Clear();
             this.commandManager = new CommandManager();
-            Console.WriteLine("DonutOS version 3 developer beta build 37");
+            Console.WriteLine("DonutOS version 4 beta build 43");
             
         }
         protected override void Run()

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using Sys = Cosmos.System;
 
@@ -16,7 +17,7 @@ namespace DonutOS.Commands
                 case "/n":
                     try
                     {
-                        Sys.FileSystem.VFS.VFSManager.CreateDirectory(args[1]);
+                        Directory.CreateDirectory(args[1]);
                         response = "Directory \"" + args[1] + "\" created successfully.";
                         break;
                     }
@@ -32,7 +33,7 @@ namespace DonutOS.Commands
                         var yn = Console.ReadLine();
                         if (yn.ToLower() == "y")
                         {
-                            Sys.FileSystem.VFS.VFSManager.DeleteDirectory(args[1], true);
+                            Directory.Delete(args[1], true);
                             response = "Directory \"" + args[1] + "\" deleted successfully.";
                         }
                         else
