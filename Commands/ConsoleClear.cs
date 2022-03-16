@@ -10,7 +10,7 @@ namespace DonutOS.Commands
         public override String execute(String[] args)
         {
             Console.Clear();
-            return "DonutOS version 3 developer beta build 33";
+            return "DonutOS version 4 developer beta build 43";
         }
     }
 }
