@@ -16,7 +16,7 @@ namespace DonutOS
             Sys.FileSystem.VFS.VFSManager.RegisterVFS(fs);
             Console.Clear();
             this.commandManager = new CommandManager();
-            Console.WriteLine("DonutOS version 4 beta build 43");
+            Console.WriteLine("DonutOS version 4 beta build 44");
             
         }
         protected override void Run()

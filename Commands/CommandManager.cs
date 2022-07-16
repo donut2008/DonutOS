@@ -35,7 +35,7 @@ namespace DonutOS.Commands
                 if (cmd.name.ToLower() == label)
                     return cmd.execute(args.ToArray());
             }
-            return "Command \"" + label + "\" not found. Type \"help\" for a list of available commands.";
+            return "Command \"" + label + "\" not found. Type \"help\" for a list of available commands.\n";
         }
     }
 }
